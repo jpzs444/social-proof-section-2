@@ -73,11 +73,25 @@ main {
     color: var(--white);
 }
 
-.profile p:nth-child(2) {
+.profile {
+    display: flex;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 40px;
+}
+
+.profile-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-details p:nth-child(1) {
     font-weight: 700;
 }
 
-.profile p:nth-child(3) {
+.profile-details p:nth-child(2) {
     color: var(--soft-pink);
 }
 
