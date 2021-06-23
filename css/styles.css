@@ -165,15 +165,8 @@ main > * {
 
     .ratings h6 {
         margin: unset;
+        margin-left: 1rem;
+        min-width: 20ch;
+        text-align: left;
     }
-
-    .reviews .stars,
-    .besttech .stars {
-        margin-right: 2rem;
-    }
-
-    .report-guru .stars {
-        margin-right: 0.5rem;
-    }
-
 }
