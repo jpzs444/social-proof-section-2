@@ -22,7 +22,7 @@ body {
     font-family: 'Spartan', sans-serif;
     font-weight: 400;
     font-size: 0.787rem;
-    line-height: 1.3;
+    line-height: 1.8;
     color: var(--very-dark-magenta);
     background-image: 
         url("../images/bg-pattern-top-mobile.svg"),
@@ -62,7 +62,7 @@ main > * {
 .intro-message p {
     font-size: 0.907rem;
     font-weight: 500;
-    line-height: 1.5;
+    line-height: 1.6;
     color: var(--dark-grayish-magenta);
     margin-top: 1.5rem;
 }
@@ -116,6 +116,7 @@ main > * {
 
 .profile {
     display: flex;
+    line-height: 1.5;
 }
 
 .profile img {
@@ -156,7 +157,9 @@ main > * {
     color: hsl(228, 45%, 44%);
 }
 
-@media only screen and (min-width: 420px) {
+/* Media Queries */
+
+@media only screen and (min-width: 26.25em) {
     .ratings > * {
         flex-direction: row;
         justify-content: center;
@@ -168,5 +171,103 @@ main > * {
         margin-left: 1rem;
         min-width: 20ch;
         text-align: left;
+    }
+}
+
+@media only screen and (min-width: 90em) {
+    body {
+        background-image: 
+            url("../images/bg-pattern-top-desktop.svg"),
+            url("../images/bg-pattern-bottom-desktop.svg");
+        background-position: left top, right bottom;
+        background-repeat: no-repeat;
+        background-size: 40.5%, 78.5%;
+    }
+
+    main > * {
+        margin: 0 10.3125rem;
+        max-width: 69.375rem;
+    }
+    
+    /* Upper-Half Styles */
+
+    .upper-half {
+        display: flex;
+        margin-top: 7.875rem;
+        text-align: left;
+    }
+
+    .intro {
+        max-width: 48.47%;
+    }
+
+    .intro-message {
+        margin-right: 6.25rem;
+    }
+
+    .intro-message h1 {
+        font-size: 3.05rem;
+    }
+
+    .intro-message p {
+        margin-top: 1.15rem;
+    }
+
+    .ratings {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        margin-left: 3.1rem;
+        width: 100%;
+    }
+
+    .ratings .stars {
+        margin: 1.25rem 0 1.25rem 1.75rem;
+    }
+
+    .ratings h6 {
+        margin-left: 1.1rem;
+        margin-right: 2.8rem;
+    }
+
+    .reviews {
+        margin-top: 0.926rem;
+        align-self: flex-start;
+    }
+
+    .besttech {
+        align-self: flex-end;
+    }
+
+    /* Lower-Half Styles */
+
+    .lower-half {
+        margin-top: 4.625rem;
+        margin-bottom: 6.25rem;
+        height: 270px;
+    }
+
+    .users {
+        display: flex;
+        align-items: center;
+        column-gap: 1.7rem;
+        height: 100%;
+    }
+
+    .users > * {
+        margin-top: unset;
+    }
+
+    .colton {
+        align-self: flex-start;
+    }
+
+    .anne {
+        align-self: flex-end;
+    }
+
+    .colton .quote {
+        margin-right: 1.214rem;
     }
 }
